@@ -1,0 +1,33 @@
+{
+  "name": "what2eat-kernel",
+  "version": "0.0.1",
+  "description": "The kernel for what2eat app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dist",
+    "postinstall": "node ./node_modules/webpack/bin/webpack.js --config webpack.prod.config.js",
+    "server:dev": "babel-watch ./src/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ypling/What2Eat-Kernel.git"
+  },
+  "author": "ypling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ypling/What2Eat-Kernel/issues"
+  },
+  "homepage": "https://github.com/ypling/What2Eat-Kernel#readme",
+  "dependencies": {
+    "babel-preset-env": "^1.2.1",
+    "express": "^4.15.2",
+    "express-graphql": "^0.6.3",
+    "graphql": "^0.9.1",
+    "webpack": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-watch": "^2.0.6"
+  }
+}
